@@ -1,0 +1,4 @@
+INFO:root:Starting HTTP request to www.google.com
+INFO:root:Invalid URL 'www.google.com': No schema supplied. Perhaps you meant http://www.google.com?
+INFO:root:Starting HTTP request to www.google.com
+INFO:root:Invalid URL 'www.google.com': No schema supplied. Perhaps you meant http://www.google.com?

@@ -1,3 +1,5 @@
 {
-  "APIs/tests/test_scraper.py": true
+  "APIs/tests/test_scraper.py": true,
+  "src/tests/test_scraper.py::test_http[https://www.googl.com]": true,
+  "src/tests/test_scraper.py::test_http[www.google.com]": true
 }
