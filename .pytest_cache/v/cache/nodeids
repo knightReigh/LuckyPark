@@ -3,5 +3,10 @@
   "src/tests/test_scraper.py::test_http[https://en.wikipedia.org/wiki/List_of_national_parks_of_the_United_States]",
   "src/tests/test_scraper.py::test_http[https://www.nationalpark-adventures.com/united-states-national-parks.html]",
   "src/tests/test_scraper.py::test_http[https://www.nps.gov/findapark/index.htm]",
-  "src/tests/test_scraper.py::test_http[https://www.googl.com]"
+  "src/tests/test_scraper.py::test_http[https://www.googl.com]",
+  "src/tests/test_scraper.py::test_validateurl[https://www.google.com-https://www.google.com]",
+  "src/tests/test_scraper.py::test_validateurl[www.163.com-http://www.163.com]",
+  "src/tests/test_scraper.py::test_validateurl[http://www.163.com-http://www.163.com]",
+  "src/tests/test_scraper.py::test_validateurl[http://localhost-http://localhost]",
+  "src/tests/test_scraper.py::test_validateurl[ftps:1231.com-http://ftps:1231.com]"
 ]
