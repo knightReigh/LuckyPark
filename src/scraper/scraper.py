@@ -3,15 +3,14 @@ import time
 import requests
 import re
 
-
-########### establish logging ############
+########### Logging ############
 logging.basicConfig(filename="sys.log", level=logging.DEBUG, filemode='w')
 handler = logging.StreamHandler()
 handler.setLevel("INFO")
 logging.getLogger().addHandler(handler)
 logging.getLogger("urllib3").setLevel(logging.CRITICAL) # suppress requets/urllib3 debug information
 
-########### http request parameters ##############
+########### Http request parameters ##############
 HEADER = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) \
     AppleWebKit/537.36 (KHTML, like Gecko) \
@@ -23,8 +22,13 @@ ERROR_STATUS_CODE = "Invalid status_code from %s: %s"
 ERROR_CONNECTION_TIMEOUT = "Unable to connect to %s after %s seconds."
 ERROR_CONNECTION_TRIALLIMIT = "Unable to connect to %s after %s trial times"
 
+########### API ##################
+NATIONAL_PARK_LIST = ""
+SEARCH_WIKI = ""
+SEARCH_EXPEDIA = ""
+SEARCH_TRIPADVISOR = ""
 
-######### functions #########
+######### Basic Request #########
 
 def requestHTTP(uri):
     """
@@ -67,3 +71,5 @@ def validateURL(uri):
     reg = re.compile(r'^(?:http|ftp)s?://'
             , re.IGNORECASE)
     return uri if re.match(reg, uri) else ("http://" + uri)
+
+######## Get National Park List ###########
